@@ -2,10 +2,107 @@
 	text-align: center;
 }
 
-body {
-  background: url('img/splash.jpg') no-repeat center center fixed;
+/*body {
+  background: url('img/feeding-rotifers.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+*/
+/* parallax */
+div {
+  box-sizing: border-box;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#group1 {
+  height: 1000px;
+  position: relative;
+  transform-style: preserve-3d;
+  font-size: 20px;
+}
+
+.background {
+  transform: translateZ(-1px) scale(2.1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: calc(500px - 50vh);
+  background: url('img/biome-splash-ps.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px; 
+}
+
+/*.darken {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('img/feeding-rotifers.jpg');
+}*/
+
+.splash {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+.title {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 400px;
+}
+.foreground {
+  position: absolute;
+  top: 100vh;
+  /*height: 1000px;*/
+  width: 100%; 
+  background: white;
+  /*opacity: 0.8;*/
+  padding-top: 100px;
+}
+
+div > .section {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.profile-pic{
+  width:70%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.space-large {
+	padding-top: 100px;
+}
+
+.space-med {
+	padding-top: 50px;
+}
+
+.space-small {
+	padding-top: 25px;
 }
