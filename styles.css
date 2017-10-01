@@ -79,11 +79,14 @@ div {
   padding-top: 100px;
 }
 
-div > .section {
+.section {
 	padding-left: 200px;
 	padding-right: 200px;
 }
 
+.section-about {
+	/*background-color: #262F36;*/
+}
 #about-focus{
 	font-size: 0.9em;
 }
@@ -103,6 +106,14 @@ div > .section {
   display: block;
   margin: 0 auto;
 }
+
+.footer {
+	background-color: #262F36;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: white;
+}
+
 
 h2 {
 	margin: 0;
