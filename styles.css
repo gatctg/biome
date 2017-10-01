@@ -84,6 +84,11 @@ div > .section {
 	padding-right: 200px;
 }
 
+#about-focus{
+	font-size: 0.9em;
+}
+
+
 .profile-pic{
   width:70%;
   display: block;
